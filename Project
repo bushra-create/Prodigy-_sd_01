@@ -1,0 +1,38 @@
+
+import java.util.*;
+class prodigy
+{
+public static void main ()
+{
+double celsius, kelvin, fahrenhiet;
+int choice:
+Scanner sc=new Scanner (System. in) ;
+System. out.println("choose the unit") ;
+System. out. println("1. kelvin") ;
+System. out.println("2.celsius") ;
+System. out. println("3. fahrenhiet"); 
+System. out.println("enter your choice") ; 
+choice=sc.nextInt();
+switch(choice)
+case 1:
+System.out. println("enter the temp in kelvin") ; kelvin=sc.nextDouble() ; celsius=(kelvin-273.15) ;
+fahrenhiet=1.8*(kelvin-273.15)+32.0;
+System.out.println("in celsius"+celsius) ;
+System.out.println("in fahrenhiet"+fahrenhiet) ;
+case 2:
+System.out.println("enter the temp in celsius") ;
+celsius=sc.nextDouble (); kelvin=(celsius+273.15) ;
+Fahrenhiet= (celsius*1.8)+32.0;
+System.out.println("in kelvin"+kelvin) ;
+System.out.println("in fahrenhiet"+fahrenhiet);
+case 3:
+System.out.println("enter the temp in fahrentiet"); fahrenhiet=sc.nextDouble();
+celsius= (fahrenhiet-32.0) *5/9;
+kelvin=(fahrenhiet-32.0) *5/9+273.15;
+System. out println("in celsius"+celsius) ;
+System.out.println("in kelvin"+kelvin) ;
+break;
+default:
+System.out.println("invalid");
+break;
+}}}
